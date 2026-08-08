@@ -74,7 +74,7 @@ const Home = () => {
 
           {/* Action Buttons */}
           <div className="flex gap-4">
-            <a href="#work" className="bg-orange-600 hover:bg-orange-500 text-white font-medium px-6 py-3 rounded-sm transition-colors">
+            <a href="#experience2" className="bg-orange-600 hover:bg-orange-500 text-white font-medium px-6 py-3 rounded-sm transition-colors">
               View work
             </a>
             <a href="#contact" className="border border-slate-700 hover:border-slate-500 text-slate-200 px-6 py-3 rounded-sm transition-colors">

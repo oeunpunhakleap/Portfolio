@@ -3,16 +3,16 @@ import React, { useState } from 'react';
 // TIMELINE DATA
 const TIMELINE_DATA = [
   {
-    year: '2025 — Present',
-    title: 'Bachelor of Software Devlopment Student',
+    year: '2025 - Present',
+    title: 'Bachelor of Software Development Student',
     subtitle: 'American University of Phnom Penh',
     description:
-      'Studying Software Devlopment, building a foundation in programming, web technology, and problem solving.',
+      'Studying Software Development, building a foundation in programming, web technology, and problem solving.',
     side: 'left',
   },
   {
     year: '2025',
-    title: 'Intern — Graphic Designer, Cameraman & Content Creator',
+    title: 'Intern - Graphic Designer, Cameraman & Content Creator',
     subtitle: 'RUPP UICC',
     description:
       'Created visual designs and digital content for various projects, assisted in filming, photography, and video production, and developed creative thinking and teamwork through hands-on experience.',
@@ -27,7 +27,7 @@ const TIMELINE_DATA = [
     side: 'left',
   },
   {
-    year: '2024 — 2025',
+    year: '2024 - 2025',
     title: 'Design & Analytics Intern',
     subtitle: 'Ministry of Information',
     description:
@@ -116,12 +116,12 @@ const Experience = () => {
       <div className="w-full max-w-5xl mb-32 z-10">
         
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-slate-700/60 text-xs font-mono tracking-wider text-cyan-400 uppercase mb-6 backdrop-blur-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
             Timeline
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
             Experience & Education
           </h2>
         </div>
@@ -129,50 +129,55 @@ const Experience = () => {
         {/* Timeline Line Wrapper */}
         <div className="relative py-4">
           {/* Central Spine Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-cyan-500/30" />
+          <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-400/10 via-cyan-400/60 to-cyan-400/10 md:left-1/2 md:-translate-x-1/2" />
 
           {/* Timeline Cards */}
-          <div className="flex flex-col gap-12 md:gap-16">
+          <div className="flex flex-col gap-8 md:gap-16">
             {TIMELINE_DATA.map((item, index) => {
               const isLeft = item.side === 'left';
 
               return (
                 <div 
                   key={index} 
-                  className={`relative flex items-center w-full ${
-                    isLeft ? 'justify-start' : 'justify-end'
+                  className={`relative flex w-full items-stretch md:items-center ${
+                    isLeft ? 'md:justify-start' : 'md:justify-end'
                   }`}
                 >
                   {/* Node Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-400 border-4 border-[#051329] z-20 shadow-md shadow-cyan-500/50" />
+                  <div className="absolute left-5 top-8 z-20 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-[#051329] bg-cyan-400 shadow-md shadow-cyan-500/50 md:left-1/2 md:top-1/2 md:-translate-y-1/2" />
+                  <div
+                    className={`absolute left-5 top-10 hidden h-0.5 w-10 bg-cyan-400/40 md:top-1/2 md:block ${
+                      isLeft ? 'md:left-[calc(50%-2.5rem)]' : 'md:left-1/2'
+                    }`}
+                  />
 
                   {/* Card Element */}
                   <div 
-                    className={`w-full md:w-[46%] ${
-                      isLeft ? 'pr-0 md:pr-10 text-left md:text-right' : 'pl-0 md:pl-10 text-left'
+                    className={`w-full pl-14 md:w-[46%] md:pl-0 ${
+                      isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12 text-left'
                     }`}
                   >
-                    <div className="bg-white text-slate-900 rounded-2xl p-6 md:p-8 shadow-xl border border-slate-100 flex flex-col items-start md:items-inherit hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div className="flex h-full flex-col items-start rounded-2xl border border-slate-700/70 bg-slate-900/75 p-5 text-left shadow-xl shadow-slate-950/20 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-2xl md:p-7">
                       
                       {/* Year Badge */}
-                      <div className={`inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold mb-4 ${
+                      <div className={`inline-block px-3 py-1 rounded-full bg-cyan-400/10 text-cyan-300 border border-cyan-400/20 text-xs font-semibold mb-4 ${
                         isLeft ? 'self-start md:self-end' : 'self-start'
                       }`}>
                         {item.year}
                       </div>
 
                       {/* Title */}
-                      <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-1 leading-snug">
+                      <h3 className="text-lg md:text-xl font-bold text-white mb-1 leading-snug">
                         {item.title}
                       </h3>
 
                       {/* Subtitle / Organization */}
-                      <p className="text-xs md:text-sm font-medium text-slate-500 mb-4">
+                      <p className="text-xs md:text-sm font-medium text-orange-300 mb-4">
                         {item.subtitle}
                       </p>
 
                       {/* Description */}
-                      <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
+                      <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
                         {item.description}
                       </p>
                     </div>
@@ -189,7 +194,7 @@ const Experience = () => {
       <div className="w-full max-w-5xl border-t border-slate-800/80 mb-32 z-10" />
 
       {/* ==================== 2. PORTFOLIO SHOWCASE SECTION ==================== */}
-      <div className="w-full max-w-5xl flex flex-col items-center z-10">
+      <div id='experience2' className="w-full max-w-5xl flex flex-col items-center z-10">
         
         {/* Showcase Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
@@ -206,7 +211,7 @@ const Experience = () => {
         </div>
 
         {/* Tab Switcher Pills */}
-        <div className="p-1.5 bg-white/90 backdrop-blur-md rounded-full shadow-lg border border-slate-200/50 flex items-center gap-1 mb-16">
+        <div className="flex w-full max-w-xl flex-wrap items-center justify-center gap-1.5 rounded-2xl border border-slate-200/50 bg-white/90 p-1.5 shadow-lg backdrop-blur-md sm:rounded-full mb-16">
           <button
             onClick={() => setActiveTab('projects')}
             className={`flex items-center gap-2 px-6 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 ${
