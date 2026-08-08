@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const TIMELINE_DATA = [
   {
     year: '2025 — Present',
-    title: 'Bachelor of Information Technology Engineering',
+    title: 'Bachelor of Software Devlopment Student',
     subtitle: 'Royal University of Phnom Penh',
     description:
       'Studying Information Technology Engineering, building a foundation in programming, web technology, and problem solving.',
@@ -370,7 +370,7 @@ const Experience = () => {
           )}
         </div>
 
-      </div>
+      </div>      
     </section>
   );
 };
