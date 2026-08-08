@@ -117,7 +117,7 @@ const Home = () => {
         </div>
         <div className="bg-[#051329]/90 p-4">
           <p className="text-slate-500 uppercase tracking-widest mb-1">Status</p>
-          <p className="text-slate-200 font-semibold">Open to work/Open to learn</p>
+          <p className="text-slate-200 font-semibold">Open to work / Open to learn</p>
         </div>
       </div>
 
