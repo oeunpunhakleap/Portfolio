@@ -5,9 +5,9 @@ const TIMELINE_DATA = [
   {
     year: '2025 — Present',
     title: 'Bachelor of Software Devlopment Student',
-    subtitle: 'Royal University of Phnom Penh',
+    subtitle: 'American University of Phnom Penh',
     description:
-      'Studying Information Technology Engineering, building a foundation in programming, web technology, and problem solving.',
+      'Studying Software Devlopment, building a foundation in programming, web technology, and problem solving.',
     side: 'left',
   },
   {
