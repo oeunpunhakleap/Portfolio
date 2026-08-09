@@ -18,14 +18,14 @@ const SOCIAL_LINKS = [
   },
   {
     label: 'Telegram',
-    href: 'https://t.me/yourusername',
+    href: 'https://t.me/Punhakleap',
     svg: (
       <path d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.154c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.642-7.91c.595-.394 1.136-.176.69.218l-10.225 9.179z" />
     )
   },
   {
     label: 'Email',
-    href: 'mailto:your.email@example.com',
+    href: 'mailto:oeunpunhakleap12@gmail.com',
     svg: (
       <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
     )

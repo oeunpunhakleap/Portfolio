@@ -74,7 +74,7 @@ const PROJECTS_DATA = [
     image: 'https://i.pinimg.com/1200x/5e/dd/e3/5edde3a87543e1ede048eda5c8706fe3.jpg',
     tags: ['Cisco PT', 'Networking', 'VLAN / NAT'],
     liveUrl: null,
-    githubUrl: '#',
+    githubUrl: null,
   },
 ];
 
