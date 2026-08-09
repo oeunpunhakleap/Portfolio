@@ -60,14 +60,14 @@ const About = () => {
       <div className="relative z-10 mx-auto w-full max-w-6xl">
         <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="relative mx-auto w-full max-w-sm">
-            <div className="absolute -inset-4 rounded-[2rem] border border-cyan-400/20 bg-cyan-400/5" />
+            <div className="absolute -inset-4 rounded-4xl border border-cyan-400/20 bg-cyan-400/5" />
             <div className="relative overflow-hidden rounded-[1.75rem] border border-slate-700/70 bg-[#0b284b]/90 shadow-2xl shadow-slate-950/40">
               <img
                 src={avatar}
                 alt="Leap avatar"
                 className="aspect-square w-full object-cover"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#051329] via-[#051329]/70 to-transparent px-6 pb-6 pt-20">
+              <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-[#051329] via-[#051329]/70 to-transparent px-6 pb-6 pt-20">
                 <p className="font-mono text-xs uppercase tracking-[0.25em] text-cyan-300">
                   Creative Developer
                 </p>
@@ -75,7 +75,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="absolute -bottom-6 left-4 right-4 grid grid-cols-3 gap-3 rounded-2xl border border-slate-700/80 bg-slate-950/90 p-3 text-center shadow-xl shadow-slate-950/40 backdrop-blur">
+            <div className="relative z-10 mx-3 -mt-3 grid grid-cols-3 gap-3 rounded-2xl border border-slate-700/80 bg-slate-950/90 p-3 text-center shadow-xl shadow-slate-950/40 backdrop-blur">
               {PROFILE_STATS.map((stat) => (
                 <div key={stat.label} className="rounded-xl bg-white/5 px-3 py-3">
                   <p className="text-lg font-bold text-orange-400">{stat.value}</p>

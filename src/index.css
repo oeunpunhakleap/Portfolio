@@ -35,12 +35,12 @@
 
 .skills-fade::before {
   left: 0;
-  background: linear-gradient(to right, #071a35, transparent);
+  background: linear-gradient(to right, #061427, rgba(6, 20, 39, 0));
 }
 
 .skills-fade::after {
   right: 0;
-  background: linear-gradient(to left, #071a35, transparent);
+  background: linear-gradient(to left, #061427, rgba(6, 20, 39, 0));
 }
 
 @media (prefers-reduced-motion: reduce) {
